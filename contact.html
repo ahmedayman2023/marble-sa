@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>رخام السلطان | تواصل معنا</title>
+  <meta name="description" content="اطلب عرض سعر أو حجز زيارة فني قياس.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  
+<div class="topbar">
+  <div class="container">نصنع الفخامة منذ أكثر من 15 عامًا في قص وتركيب الرخام والجرانيت.</div>
+</div>
+<nav class="nav">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">
+      <div class="brand-logo">🪨</div>
+      <span>رخام السلطان</span>
+    </a>
+    <button class="menu-toggle" onclick="toggleMenu()">القائمة ☰</button>
+    <div class="nav-links">
+      <a href="index.html">الرئيسية</a>
+      <a href="products.html">المنتجات</a>
+      <a href="gallery.html">المعرض</a>
+      <a href="about.html">من نحن</a>
+      <a href="contact.html" class="btn">تواصل معنا</a>
+    </div>
+  </div>
+</nav>
+
+  <section class="section">
+    <div class="container">
+      <h1>تواصل معنا</h1>
+      <p>املأ النموذج التالي وسنعاود الاتصال بك خلال يوم عمل واحد.</p>
+      <form class="card" onsubmit="event.preventDefault();document.getElementById('msg').classList.remove('alert');document.getElementById('msg').classList.add('success');document.getElementById('msg').textContent='تم إرسال طلبك (نموذج تجريبي)';">
+        <div class="form-row">
+          <div>
+            <label>الاسم الكامل</label>
+            <input type="text" placeholder="مثال: سلطان أبو هلال" required>
+          </div>
+          <div>
+            <label>رقم الجوال</label>
+            <input type="tel" placeholder="05xxxxxxxx" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <label>المدينة</label>
+            <input type="text" placeholder="الرياض">
+          </div>
+          <div>
+            <label>نوع الرخام المطلوب</label>
+            <input type="text" placeholder="كارارا / إمبيرادور / ...">
+          </div>
+        </div>
+        <div>
+          <label>تفاصيل إضافية</label>
+          <textarea rows="5" placeholder="المساحة، السماكة، الموقع، الملاحظات"></textarea>
+        </div>
+        <div id="msg" class="alert" style="margin-top: .6rem;">لن يتم إرسال البيانات فعليًا — هذا نموذج عرض.</div>
+        <div style="margin-top:1rem;display:flex;gap:.6rem;flex-wrap:wrap">
+          <button class="btn" type="submit">إرسال الطلب</button>
+          <a class="btn" style="background:#eee;border:1px solid #ddd" href="tel:0500000000">اتصال مباشر</a>
+          <a class="btn" style="background:#eee;border:1px solid #ddd" href="https://wa.me/966500000000" target="_blank" rel="noopener">واتساب</a>
+        </div>
+      </form>
+    </div>
+  </section>
+  
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>رخام السلطان</h4>
+      <p>توريد، قص، تصميم وتركيب الرخام والجرانيت الطبيعي بمقاييس جودة عالية تناسب القصور، الفلل، والفنادق.</p>
+      <p>الرياض — المملكة العربية السعودية</p>
+    </div>
+    <div>
+      <h4>روابط سريعة</h4>
+      <p><a href="products.html">كتالوج المنتجات</a></p>
+      <p><a href="gallery.html">أعمالنا</a></p>
+      <p><a href="contact.html">عروض الأسعار</a></p>
+    </div>
+    <div>
+      <h4>تواصل</h4>
+      <p>الهاتف: 0500000000</p>
+      <p>البريد: sales@example.com</p>
+      <p>إنستغرام: @marble_sultan</p>
+    </div>
+  </div>
+  <div class="container" style="margin-top:1rem;border-top:1px solid #2a2d36;padding-top:.6rem">
+    © <span id="year"></span> رخام السلطان — جميع الحقوق محفوظة
+  </div>
+</footer>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
